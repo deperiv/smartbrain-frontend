@@ -1,0 +1,17 @@
+.logo-container {
+    width: 120px;
+    height: 120px;
+    margin: 80px;   
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(89deg, #FF6EDF 0%, #04C8DE 100%);
+    opacity: 0.9;
+    padding: 10px;
+}
