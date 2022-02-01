@@ -2,13 +2,10 @@ import Particles from "react-tsparticles";
 
 const ParticlesEdit = () => {
   const particlesInit = (main) => {
-    console.log(main);
-
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
   };
 
   const optionsParticles = {
@@ -69,7 +66,7 @@ const ParticlesEdit = () => {
           enable: true,
           area: 800,
         },
-        value: 100,
+        value: 50,
       },
       opacity: {
         value: 0.5,
