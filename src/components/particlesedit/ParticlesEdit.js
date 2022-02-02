@@ -1,13 +1,6 @@
 import Particles from "react-tsparticles";
 
 const ParticlesEdit = () => {
-  const particlesInit = (main) => {
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-  };
-
-  const particlesLoaded = (container) => {
-  };
-
   const optionsParticles = {
     fpsLimit: 60,
     interactivity: {
@@ -43,7 +36,6 @@ const ParticlesEdit = () => {
         value: "#ffffff",
       },
       links: {
-        // color: "#ffffff",
         color: "#ffffff",
         distance: 150,
         enable: true,
@@ -86,8 +78,6 @@ const ParticlesEdit = () => {
     <Particles
       className="particles"
       id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
       options={optionsParticles}
     />
   );

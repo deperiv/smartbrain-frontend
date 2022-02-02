@@ -15,3 +15,9 @@
     left: 0;
     z-index: -1;
 }
+
+.bounding-box {
+    position: absolute;
+    box-shadow: 0 0 0 3px #149df2 inset;
+    cursor: pointer;
+}
