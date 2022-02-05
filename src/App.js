@@ -111,9 +111,6 @@ class App extends Component {
       this.displayFaceBoxes(this.getRegions(response).map((region) => this.calculateFaceLocation(region)))
 
     })
-    // .then(response => this.getRegions(response))
-    // .then(regions => regions.map((region) => this.calculateFaceLocation(region)))
-    // .then(boxes => this.displayFaceBoxes(boxes))
     .catch(err => console.log(err))
 
   }
@@ -151,7 +148,8 @@ class App extends Component {
                 />
             </div>
           :(
-            route === 'signin'
+            (route === 'signin' || route === 'signout')
+
             ? <SignIn onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
             : <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
           ) 
