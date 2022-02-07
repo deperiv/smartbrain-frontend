@@ -33,7 +33,8 @@ class SignIn extends React.Component{
             }  else {
                 console.log('no user')
             }
-        })   
+        })
+        .catch(console.log)    
     }
 
 
